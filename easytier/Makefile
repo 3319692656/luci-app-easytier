@@ -48,7 +48,7 @@ define Package/$(PKG_NAME)/description
 endef
 
 define Build/Prepare
-	[ ! -f $(PKG_BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION).zip ] && wget http://180.184.65.184:8000/api/v1/files/download?path=%2Feasytier-linux-mipsel-v2.2.2.zip
+	[ ! -f $(PKG_BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION).zip ] && wget https://dotor-1366130196.cos.ap-guangzhou.myqcloud.com/easytier-linux-mipsel-v2.2.2.zip
 	unzip -j $(PKG_NAME)-$(PKG_VERSION).zip -d $(PKG_BUILD_DIR)
 endef
 
